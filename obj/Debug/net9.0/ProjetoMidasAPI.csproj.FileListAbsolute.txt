@@ -156,3 +156,4 @@ C:\Users\andre\Desktop\2DS\DS\ProjetoMidasAPI\ProjetoMidasAPI\obj\Debug\net9.0\r
 C:\Users\andre\Desktop\2DS\DS\ProjetoMidasAPI\ProjetoMidasAPI\obj\Debug\net9.0\ProjetoMidasAPI.pdb
 C:\Users\andre\Desktop\2DS\DS\ProjetoMidasAPI\ProjetoMidasAPI\obj\Debug\net9.0\ProjetoMidasAPI.genruntimeconfig.cache
 C:\Users\andre\Desktop\2DS\DS\ProjetoMidasAPI\ProjetoMidasAPI\obj\Debug\net9.0\ref\ProjetoMidasAPI.dll
+C:\Users\andre\Desktop\2DS\DS\ProjetoMidasAPI\ProjetoMidasAPI\obj\Debug\net9.0\ProjetoMidasAPI.sourcelink.json
