@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoMidasAPI", "ProjetoMidasAPI.csproj", "{2B22E4A0-A83F-E0D8-E6D4-817652B02A5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B22E4A0-A83F-E0D8-E6D4-817652B02A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B22E4A0-A83F-E0D8-E6D4-817652B02A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B22E4A0-A83F-E0D8-E6D4-817652B02A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B22E4A0-A83F-E0D8-E6D4-817652B02A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E67175D1-E61E-426A-AF0E-0893538FC35A}
+	EndGlobalSection
+EndGlobal
