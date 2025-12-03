@@ -1,0 +1,33 @@
+﻿IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+GO
+
+BEGIN TRANSACTION;
+CREATE TABLE [Lancamentos] (
+    [IdLancamento] int NOT NULL IDENTITY,
+    [Descricao] nvarchar(200) NOT NULL,
+    [Valor] decimal(18,2) NOT NULL,
+    [Data] datetime2 NOT NULL,
+    CONSTRAINT [PK_Lancamentos] PRIMARY KEY ([IdLancamento])
+);
+
+CREATE TABLE [Projecoes] (
+    [IdProjecao] int NOT NULL IDENTITY,
+    [Titulo] nvarchar(200) NOT NULL,
+    [ValorPrevisto] decimal(18,2) NOT NULL,
+    [DataReferencia] datetime2 NOT NULL,
+    CONSTRAINT [PK_Projecoes] PRIMARY KEY ([IdProjecao])
+);
+
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20251202211800_AjusteDecimal', N'9.0.0');
+
+COMMIT;
+GO
+
