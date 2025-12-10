@@ -1,5 +1,5 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
+# https://github.com/Azure/webapps-deploy
+# GitHub Actions for Azure: https://github.com/Azure/actions
 
 name: Build and deploy ASP.Net Core app to Azure Web App - projetomidas
 
@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: windows-latest
     permissions:
-      contents: read #This is required for actions/checkout
+      contents: read # Required for actions/checkout
 
     steps:
       - uses: actions/checkout@v4
@@ -51,5 +51,5 @@ jobs:
         with:
           app-name: 'projetomidas'
           slot-name: 'Production'
-          package: ./publish
+          package: .net-app
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71BDDD818E6E4981B2711E494CCFD96F }}
