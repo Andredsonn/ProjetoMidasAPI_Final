@@ -51,5 +51,5 @@ jobs:
         with:
           app-name: 'projetomidas'
           slot-name: 'Production'
-          package: .
+          package: ${{env.DOTNET_ROOT}}/myapp
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71BDDD818E6E4981B2711E494CCFD96F }}
