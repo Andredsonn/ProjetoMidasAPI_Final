@@ -11,7 +11,6 @@ namespace ProjetoMidasAPI.Data
         // Cada DbSet vira uma tabela no banco
         public DbSet<Projecao> Projecoes { get; set; } = null!;
         public DbSet<Lancamento> Lancamentos { get; set; } = null!;
-        public DbSet<Emprestimo> Emprestimos {get; set; } = null!;
 
         // É aqui o OnModelCreating
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -22,9 +21,16 @@ namespace ProjetoMidasAPI.Data
 
             modelBuilder.Entity<Lancamento>().ToTable("Lancamentos");
             modelBuilder.Entity<Lancamento>().HasKey(l => l.IdLancamento);
-            
-            modelBuilder.Entity<Emprestimo>().ToTable("Emprestimos");
-            modelBuilder.Entity<Emprestimo>().HasKey(e => e.IdSimEmprestimo);
+
+            // decimal
+            modelBuilder.Entity<Projecao>()
+                .Property(p => p.ValorPrevisto)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Lancamento>()
+                .Property(l => l.Valor)
+                .HasColumnType("decimal(18,2)");
+
             base.OnModelCreating(modelBuilder);
         }
     }

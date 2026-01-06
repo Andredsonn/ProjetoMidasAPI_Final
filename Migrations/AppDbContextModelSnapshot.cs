@@ -22,58 +22,6 @@ namespace ProjetoMidasAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Emprestimo", b =>
-                {
-                    b.Property<int>("IdSimEmprestimo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdSimEmprestimo"));
-
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataCriacaoSE")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("IOFemprestimo")
-                        .HasColumnType("decimal(5,4)");
-
-                    b.Property<int?>("UsuarioResponsavel")
-                        .HasColumnType("int");
-
-                    b.Property<string>("descricaoEmprestimo")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<decimal>("despesasEmprestimo")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("nomeEmprestimo")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int>("parcelasEmprestimo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("provedorEmprestimo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("tarifasEmprestimo")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("valorEmprestimo")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("valorParcelas")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("IdSimEmprestimo");
-
-                    b.ToTable("Emprestimos", (string)null);
-                });
-
             modelBuilder.Entity("Lancamento", b =>
                 {
                     b.Property<int>("IdLancamento")
@@ -88,29 +36,13 @@ namespace ProjetoMidasAPI.Migrations
                     b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("DescricaoLancamento")
+                    b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int?>("IdProjecao")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ObservacaoLancamento")
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<int?>("TipoLancamento")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("UsuarioResponsavel")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Valor")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<int?>("idRecorrente")
-                        .HasColumnType("int");
 
                     b.HasKey("IdLancamento");
 
@@ -135,9 +67,6 @@ namespace ProjetoMidasAPI.Migrations
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
-
-                    b.Property<int?>("UsuarioResponsavel")
-                        .HasColumnType("int");
 
                     b.Property<decimal>("ValorPrevisto")
                         .HasColumnType("decimal(18,2)");
