@@ -6,6 +6,7 @@ Enum do tipo de lançamento (débito ou crédito) <br>
 Classe Empréstimo e sua controller. <br><br>
 Não montei um roadmap de desenvolvimento mas as próximas metas são: <br>
 Terminar de adicionar todas as classes; <br>
+Estabelecer relações entre elas; <br>
 Adicionar autorização e autentificação; <br>
 Montar perfis de usuário; <br><br>
 Essa é a primeira fase que eu planejo concluir até fevereiro, vou atualizando esse README conforme for fazendo as coisas.<br>
