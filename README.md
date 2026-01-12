@@ -6,6 +6,7 @@ Agora as próximas metas são: <br><br>
 Estabelecer relações entre elas; <br>
 Adicionar autorização e autentificação; <br>
 Montar perfis de usuário; <br><br>
+Refinar controllers com adição de regras de introdução de dados e etc <br><br>
 Essa é a primeira fase que eu planejo concluir até fevereiro, vou atualizando esse README conforme for fazendo as coisas.<br>
 Depois disso entra a questão do front-end. <br>
 É isso.
